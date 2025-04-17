@@ -19,3 +19,4 @@ app.listen(port,() => {
 
 // definisco gli asset statici
 app.use(express.static(`public`))
+

@@ -31,6 +31,8 @@ router.patch('/posts/:id', function (req, res) {
     
 // destroy
 router.delete('/posts/:id', function (req, res) {
-    res.send('Eliminazione dei postsa ' + req.params.id);
+    res.send('Eliminazione dei posts ' + req.params.id);
 });
 
+// esporto il router posts
+module.exports = router;
