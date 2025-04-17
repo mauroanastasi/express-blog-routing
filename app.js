@@ -20,3 +20,9 @@ app.listen(port,() => {
 // definisco gli asset statici
 app.use(express.static(`public`))
 
+
+// importo il router in una variabile
+const postsRouter = require(`./routers/posts.js`)
+
+// utilizzo postsRouter per creare effettivamente le rotte
+app.use(`/posts`, postsRouter);
